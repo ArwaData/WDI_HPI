@@ -52,23 +52,19 @@ In this project, we aim to predict the HPI for some countries by the subject acc
 - understand the dataset, perform basic cleaning and processing, visualize the data to show the distribution of the datasets
 - Determine how to calibrate the data.
 
-#### Extract Features
-Devise new features based on the given features, some intuitions.
-Create a generator to break the data to be trained into batches.
-Determine Approaches to Modeling the Problem
-divide the data into second segments and then generate features that were based on the readings.
-Train and Classify with benchmark
-Work will be done to classify the activities using a classifier from sklearn such as logistic regression as a benchmark and fine tune the model's hyperparameters.
-Split the data into Training and Test sets.
-Improve the classification with an ANN
-The solution then proposes a Artificial neural network designed to take a 10. design a classifier that will be used for the Artificial Neural Network (ANN).
-#### Data Modeling
+#### Data Modeling & Training
+- Features selection
+- Determine Approaches to Model the datasets.
+<br>  we will train the data with multiple supervise algorithms from sklearn such as logistic regression and SVM, and may try time series forecasting.
+- select the best model based on the evaluation.
 
 
 #### Test and Evaluate
-Finally, use the Test data results to evaluate the performance of the classifier output. The goal is to show a comparison with the traditional classification models to an ANN, and understanding any improvements in terms of computational costs while maintaining similar accuracy.
+Finally, use the Test data results to evaluate the performance of the output. The goal is to show a comparison of the models, and try to improve the best model to get the best result.
 
 ### Acknowledgements and References: <br>
-
+Dataset resouces:
+WDI :  https://datatopics.worldbank.org/world-development-indicators/ <br>
+HPI :  https://happyplanetindex.org/countries/ 
 
 
