@@ -11,8 +11,8 @@ The Happy Planet Index is a measure of sustainable wellbeing that ranks countrie
 We need it because multiple crises, such as persistent inequalities, accelerating climate breakdown, and rapid biodiversity loss, are interconnected and stem from the same root cause: our economies are structured, governed, and measured to promote short-term economic growth over long-term collective wellbeing. Governments frequently place faster economic growth above all other considerations. They lose sight of what really matters: people living long, happy, and sustainable lives all across the world.
 
 ## Problem Statement
-The project aims to analyze the data and answer some questions that are relative to each dataset, and we will try to understand the problems that some countries are having then we will try to find the causation of it. 
-in addition, we will use what I've learned in Machine learning to build a model that predict the happiness and well-being rate for some countries
+The project aims to analyze the data and answer some questions that are relative to  global development and poverty reduction for each dataset, and we will try to understand the problems that some countries are having then we will try to find the causation of it. 
+in addition, we will use what I've learned in Machine learning to build a model that predict the happiness and well-being rate for some countries.
 
 ## Datasets and Inputs
 This project uses the dataset of The World Development Indicators (WDI), which is the the World Bank's most comprehensive collection of cross-country development data. <br>
@@ -44,9 +44,29 @@ the project will run the data on multiple algorithms, the comparsion between the
 
 ## Evaluation Metrics
 
+In this project, we aim to predict the HPI for some countries by the subject accurately, so misclassification rate is chosen as the assessment measure to compare the performance of different models. So, to decide what is the best algorithm to use for this problem, we need to measure the accuracy, precision and recall of the models.
 
 ## Project Design
+#### Collect & Explore the data
+- Load Datasets and prepare training set and test set.
+- understand the dataset, perform basic cleaning and processing, visualize the data to show the distribution of the datasets
+- Determine how to calibrate the data.
 
+#### Extract Features
+Devise new features based on the given features, some intuitions.
+Create a generator to break the data to be trained into batches.
+Determine Approaches to Modeling the Problem
+divide the data into second segments and then generate features that were based on the readings.
+Train and Classify with benchmark
+Work will be done to classify the activities using a classifier from sklearn such as logistic regression as a benchmark and fine tune the model's hyperparameters.
+Split the data into Training and Test sets.
+Improve the classification with an ANN
+The solution then proposes a Artificial neural network designed to take a 10. design a classifier that will be used for the Artificial Neural Network (ANN).
+#### Data Modeling
+
+
+#### Test and Evaluate
+Finally, use the Test data results to evaluate the performance of the classifier output. The goal is to show a comparison with the traditional classification models to an ANN, and understanding any improvements in terms of computational costs while maintaining similar accuracy.
 
 ### Acknowledgements and References: <br>
 
