@@ -44,7 +44,11 @@ the project will run the data on multiple algorithms, the comparsion between the
 
 ## Evaluation Metrics
 
-In this project, we aim to predict the HPI for some countries by the subject accurately, so misclassification rate is chosen as the assessment measure to compare the performance of different models. So, to decide what is the best algorithm to use for this problem, we need to measure the accuracy, precision and recall of the models.
+In this project, we aim to predict the HPI for some countries by the subject accurately, so since we have a basic regression problem, I’ll evaluate the models based on MSE, RMSE, MAE, MBE, Coefficient of determination (R²).
+The mean of the absolute error between the actual and anticipated values in the dataset is the Mean absolute error. It calculates the average of the dataset’s residuals.
+Mean Squared Error represents the difference between the original and forecasted values in the data set is the Mean Squared Error. It calculates the residuals’ variance.
+The R-squared coefficient of determination shows the fraction of the variation in the dependent variable that the linear regression model can explain. It is a scale-free score, meaning that regardless matter how little or huge the values are, R square will be less than one.
+So I think R-squared is the best metric that we should use in this problem because the question that we want to answer after training the models is: how close are we to predict the HPI that the countries will get in the future? and R-squared is suitable for this problem.
 
 ## Project Design
 #### Collect & Explore the data
@@ -63,7 +67,7 @@ In this project, we aim to predict the HPI for some countries by the subject acc
 Finally, use the Test data results to evaluate the performance of the output. The goal is to show a comparison of the models, and try to improve the best model to get the best result.
 
 ### Acknowledgements and References: <br>
-Dataset resouces:
+Dataset resouces: <br>
 WDI :  https://datatopics.worldbank.org/world-development-indicators/ <br>
 HPI :  https://happyplanetindex.org/countries/ 
 
